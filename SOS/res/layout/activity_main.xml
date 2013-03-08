@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/loginoption_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dip">
+
+        <Button
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="148dp"
+        android:onClick="OnfbClick"
+        android:src="@drawable/fb" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/signup"
+        android:text="@string/login"
+        android:onClick="OnloginClick" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginoption_panel"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginLeft="16dp"
+        android:text="@string/signup"
+        android:onClick="OnsignupClick"/>
+
+</RelativeLayout>

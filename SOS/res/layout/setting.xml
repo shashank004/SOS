@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity" 
+    android:background="@drawable/images">
+
+    <EditText
+        android:id="@+id/setphone1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/setphone1"
+        android:inputType="phone">
+    </EditText>
+
+    <EditText
+        android:id="@+id/setphone2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/setphone1"
+        android:layout_below="@+id/setphone1"
+        android:ems="10"
+        android:hint="@string/setphone2"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/setemail1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setphone2"
+        android:ems="10"
+        android:hint="@string/setemail1"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/setemail2"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setemail1"
+        android:ems="10"
+        android:hint="@string/setemail2"
+        android:inputType="textEmailAddress" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="false"
+        android:layout_below="@+id/setemail2"
+        android:ems="10"
+        android:hint="@string/update"
+         />
+    
+       </RelativeLayout>
