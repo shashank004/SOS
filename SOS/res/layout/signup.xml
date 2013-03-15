@@ -6,65 +6,75 @@
     android:background="@drawable/images">
 
     <EditText
-        android:id="@+id/unames"
+        android:id="@+id/fname"
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentTop="false"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
         android:ems="10"
-        android:hint="@string/user_name"
-        android:inputType="text">
-    </EditText>
+        android:hint="@string/first_name"
+        android:inputType="text" />
 
     <EditText
-        android:id="@+id/phones"
+        android:id="@+id/lname"
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:layout_alignLeft="@+id/unames"
-        android:layout_below="@+id/unames"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fname"
         android:ems="10"
-        android:hint="@string/phone"
-        android:inputType="phone" />
+        android:hint="@string/second_name"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/emails"
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/phones"
+        android:layout_below="@+id/lname"
         android:ems="10"
         android:hint="@string/email"
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/passwords"
-        android:layout_width="fill_parent"
-        android:layout_height="60dp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/emails"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword" />
-
-    <EditText
         android:id="@+id/cpasswords"
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/passwords"
         android:ems="10"
         android:hint="@string/cpasswords"
         android:inputType="textPassword" />
-    
+
     <Button
         android:id="@+id/done"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/phones"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_below="@+id/cpasswords"
         android:ems="10"
         android:hint="@string/done"
-       />
+        android:onClick="onSignup" />
+
+    <EditText
+        android:id="@+id/phones"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/emails"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/passwords"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/emails"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+    
        </RelativeLayout>

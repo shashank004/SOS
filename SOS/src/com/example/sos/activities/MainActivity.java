@@ -4,10 +4,10 @@ package com.example.sos.activities;
 
 
 import com.example.sos.R;
-import com.facebook.Session;
-import com.facebook.SessionState;
 import com.facebook.Request;
 import com.facebook.Response;
+import com.facebook.Session;
+import com.facebook.SessionState;
 import com.facebook.model.GraphUser;
 import android.os.Bundle;
 import android.app.Activity;

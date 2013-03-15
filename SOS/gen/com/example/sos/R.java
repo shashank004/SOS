@@ -216,7 +216,7 @@ containing a value of this type.
         public static final int images=0x7f020021;
     }
     public static final class id {
-        public static final int action_settings=0x7f04002c;
+        public static final int action_settings=0x7f04002e;
         public static final int com_facebook_login_activity_progress_bar=0x7f04000a;
         public static final int com_facebook_picker_activity_circle=0x7f040009;
         public static final int com_facebook_picker_checkbox=0x7f04000c;
@@ -236,31 +236,33 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f04001c;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f04001a;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f04001b;
+        public static final int cpassword=0x7f04001e;
         public static final int cpasswords=0x7f04002a;
-        public static final int done=0x7f04002b;
-        public static final int emails=0x7f040028;
-        public static final int forgotp=0x7f040020;
+        public static final int done=0x7f04002c;
+        public static final int emails=0x7f040029;
+        public static final int fname=0x7f040027;
+        public static final int forgotp=0x7f040022;
         public static final int imageButton1=0x7f040005;
         public static final int large=0x7f040002;
         public static final int line=0x7f040004;
+        public static final int lname=0x7f040028;
         public static final int login=0x7f040006;
         public static final int loginoption_panel=0x7f040003;
         public static final int normal=0x7f040001;
-        public static final int password=0x7f04001e;
-        public static final int passwords=0x7f040029;
-        public static final int phones=0x7f040027;
+        public static final int password=0x7f04001f;
+        public static final int passwords=0x7f04002b;
+        public static final int phones=0x7f04002d;
         public static final int picker_subtitle=0x7f040019;
         public static final int search_box=0x7f040018;
-        public static final int setemail1=0x7f040023;
-        public static final int setemail2=0x7f040024;
-        public static final int setphone1=0x7f040021;
-        public static final int setphone2=0x7f040022;
+        public static final int setemail1=0x7f040025;
+        public static final int setemail2=0x7f040026;
+        public static final int setphone1=0x7f040023;
+        public static final int setphone2=0x7f040024;
         public static final int signup=0x7f040007;
         public static final int small=0x7f040000;
-        public static final int uname=0x7f04001f;
-        public static final int unames=0x7f040026;
-        public static final int update=0x7f040025;
-        public static final int username=0x7f04001d;
+        public static final int uname=0x7f040021;
+        public static final int update=0x7f04001d;
+        public static final int username=0x7f040020;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -289,7 +291,7 @@ containing a value of this type.
         public static final int action_settings=0x7f05001a;
         public static final int app_id=0x7f05001c;
         public static final int app_name=0x7f050019;
-        public static final int cancel=0x7f05002d;
+        public static final int cancel=0x7f05002e;
         public static final int com_facebook_choose_friends=0x7f05000f;
         public static final int com_facebook_dialogloginactivity_ok_button=0x7f050000;
         public static final int com_facebook_internet_permission_error_message=0x7f050013;
@@ -315,23 +317,24 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_log_in_button=0x7f050008;
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f050009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f05000a;
-        public static final int cpasswords=0x7f05002a;
-        public static final int done=0x7f05002b;
-        public static final int email=0x7f050027;
-        public static final int forgot_password=0x7f050021;
+        public static final int cpasswords=0x7f05002b;
+        public static final int done=0x7f05002c;
+        public static final int email=0x7f050028;
+        public static final int first_name=0x7f05001d;
+        public static final int forgot_password=0x7f050022;
         public static final int hello_world=0x7f05001b;
-        public static final int login=0x7f05001f;
-        public static final int password=0x7f05001e;
-        public static final int passwords=0x7f050029;
-        public static final int phone=0x7f050026;
-        public static final int setemail1=0x7f050024;
-        public static final int setemail2=0x7f050028;
-        public static final int setphone1=0x7f050022;
-        public static final int setphone2=0x7f050023;
-        public static final int signin=0x7f05002c;
-        public static final int signup=0x7f050020;
-        public static final int update=0x7f050025;
-        public static final int user_name=0x7f05001d;
+        public static final int login=0x7f050020;
+        public static final int password=0x7f05001f;
+        public static final int passwords=0x7f05002a;
+        public static final int phone=0x7f050027;
+        public static final int second_name=0x7f05001e;
+        public static final int setemail1=0x7f050025;
+        public static final int setemail2=0x7f050029;
+        public static final int setphone1=0x7f050023;
+        public static final int setphone2=0x7f050024;
+        public static final int signin=0x7f05002d;
+        public static final int signup=0x7f050021;
+        public static final int update=0x7f050026;
     }
     public static final class style {
         /** 

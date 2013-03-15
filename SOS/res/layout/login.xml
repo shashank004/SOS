@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:ems="10"
-        android:hint="@string/user_name"
+        android:hint="@string/first_name"
         android:inputType="phone">
        </EditText>
 
@@ -46,6 +46,7 @@
     android:layout_alignBottom="@+id/login"
     android:layout_alignLeft="@+id/password"
     android:layout_marginLeft="29dp"
-    android:text="@string/forgot_password" />
+    android:text="@string/forgot_password"
+    android:onClick="onclickfp"/>
 
 </RelativeLayout>

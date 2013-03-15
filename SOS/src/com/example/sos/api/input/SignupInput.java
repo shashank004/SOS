@@ -2,12 +2,14 @@ package com.example.sos.api.input;
 
 import org.json.JSONObject;
 
+
 public class SignupInput implements ApiInput {
 
 private  String phone ;
 private  String password;
 private  String email;
-private  String uname;
+private  String fname;
+private   String lname;
 	
 	
 	
@@ -39,13 +41,22 @@ public  void setEmail(String email) {
 }
 
 
-public  String getUname() {
-	return uname;
+public  String getfname() {
+	return fname;
+}
+public  void setfname(String fname) {
+	this.fname = fname;
 }
 
-public  void setUname(String uname) {
-	this.uname = uname;
+public  void setlname(String lname) {
+	this.lname = lname;
 }
+public  String getlname() {
+	return lname;
+}
+
+
+
 
 
 	@Override
@@ -55,16 +66,18 @@ public  void setUname(String uname) {
    
    
    try{
-		signupinp.put("phone", phone);
+		signupinp.put("phoneNo", phone);
 		signupinp.put("password", password);
-		signupinp.put("email", email);
-		signupinp.put("uname", uname);
+		signupinp.put("emailId", email);
+		signupinp.put("firstName", fname);
+		signupinp.put("lastName", lname);
+		signupinp.put("fbId", null);
 		
 		}catch(Exception e){
 			System.out.println(e);
 		}
 		
 		return signupinp;
+		
 	}
-
 }

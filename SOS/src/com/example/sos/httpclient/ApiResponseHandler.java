@@ -6,9 +6,10 @@ import org.json.JSONObject;
 
 public abstract class ApiResponseHandler {
 
-public abstract void onSuccess(String Activityname, JSONObject jsonobj);
+public abstract void onSuccess(int reqId, JSONObject jsonobj);
 
-public abstract void onFailure(String Activityname, JSONObject jsonobj);
+public abstract void onFailure(int reqId, JSONObject jsonobj);
 	
 
 }
+

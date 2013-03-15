@@ -25,11 +25,11 @@ public  void setPassword(String password) {
 @Override
 public JSONObject APIinp() {
 	
-	
+	//phoneNo":"9811735491","password":"!@#$!@#$"
 	
 	JSONObject logininp = new JSONObject();
 	try{
-	logininp.put("phone", phone);
+	logininp.put("phoneNo", phone);
 	logininp.put("password", password);
 	
 	}catch(Exception e){
