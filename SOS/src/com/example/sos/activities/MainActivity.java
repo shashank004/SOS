@@ -25,8 +25,7 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 	}
-	
-	public void OnfbClick(View view){
+		public void OnfbClick(View view){
 		
 		//fb login
 		Session.openActiveSession(this,true, new Session.StatusCallback() {

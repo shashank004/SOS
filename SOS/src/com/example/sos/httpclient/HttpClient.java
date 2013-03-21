@@ -13,13 +13,16 @@ import com.loopj.android.http.RequestParams;
 
 
 public class HttpClient {
-	private AsyncHttpClient httpClient = new AsyncHttpClient();
+	private AsyncHttpClient httpClient;
 	private static Header[] headerarr =new Header[2];
-	public  Map<Integer,ApiResponseHandler> mymap = new HashMap<Integer, ApiResponseHandler>();
+	public  Map<Integer,ApiResponseHandler> mymap;
 	private static HttpClient httpclientsngleton = null;
 	
 	
 	private HttpClient(){
+		httpClient = new AsyncHttpClient();
+		httpClient.setTimeout(10);
+		mymap = new HashMap<Integer, ApiResponseHandler>();
 		}
 	
 	public static HttpClient getClientObject(){

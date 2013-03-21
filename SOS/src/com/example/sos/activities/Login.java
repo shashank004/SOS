@@ -43,16 +43,24 @@ public class Login extends Activity {
 		
 		}
 
-	public void onStart(Bundle savedInstanceState) {
-	HttpClient.getClientObject().register(2, arh); 
-	}
+//	public void onStart() {
+//		super.onStart();
+//	HttpClient.getClientObject().register(1, arh); 
+//	}
+//	
+//	public void onStop() {
+//		
+//		HttpClient.getClientObject().unRegister(1);
+//		super.onStop();
+//	}
 	
 	public void onLogin(View view){
 		
 		//taking out the values of the phone number and password
 		String phn =phne.getText().toString();
 		String pas= password.getText().toString();
-
+        li.setPhone(phn);
+        li.setPassword(pas);
 		
 		// checking validations on the phone number and password entered
 	if(Validation.phoneValidation(phn)==false){
@@ -69,65 +77,58 @@ public class Login extends Activity {
 		
 //	}
 //	
-//		   if(phn.equalsIgnoreCase("9971855777") && pas.equals("1234")){
-//			   Intent intent = new Intent(getApplicationContext(), Setting.class);
-//			   startActivity(intent);
-//		   }
+		   if(phn.equalsIgnoreCase("9971855777") && pas.equals("1234")){
+			   Intent intent = new Intent(getApplicationContext(), Setting.class);
+			   startActivity(intent);
+		   }
 		
-	clientCall();
-	
-	
+//	clientCall();
 	
 	}
 	
-
-private void  clientCall(){
-	String jsonstrng = li.APIinp().toString();
-	RequestParams param = new RequestParams();
-	param.put("parameters",jsonstrng );
-	int requestId =1;
-	
-	
-	
-	HttpClient.getClientObject().post(1,getApplicationContext(), HttpClient.header(), param, "http://10.0.0.51:8080/backend/signup",requestId);
-	activitymap.put(requestId, "signup");
-	
-}
-
-
-
-
-	ApiResponseHandler arh = new ApiResponseHandler(){
-		
-		
- 
-		@Override
-		public void onSuccess(int reqId, JSONObject jsonobj) {
-		if(activitymap.get(reqId).equals("signup")){
-	    
-		}
-		
-		
-			
-		
-			
-		}
-
-		@Override
-		public void onFailure(int reqId, JSONObject jsonobj) {
-			// TODO Auto-generated method stub
-			
-		}
-		
-	};
-		
-	public void onclickfp(View view){
-		
-		Intent intent = new Intent(Login.this, forgotPaswrd.class);
-		startActivity(intent);
 	}
-	public void onStop(Bundle savedInstanceState) {
-		HttpClient.getClientObject().unRegister(2);
-		
-	}
-}
+	
+//
+//private void  clientCall(){
+//	String jsonstrng = li.APIinp().toString();
+//	RequestParams param = new RequestParams();
+//	param.put("input",jsonstrng );
+//	int requestId =1;
+//	
+//	
+//	
+//	HttpClient.getClientObject().post(1,getApplicationContext(), HttpClient.header(), param, "http://192.168.3.242:8080/backend/login",requestId);
+//	activitymap.put(requestId, "login");
+//	
+//}
+//
+//
+//
+//
+//	ApiResponseHandler arh = new ApiResponseHandler(){
+//		
+//		
+// 
+//		@Override
+//		public void onSuccess(int reqId, JSONObject jsonobj) {
+//		if(activitymap.get(reqId).equals("login-" +
+//				"")){
+//	    
+//		}
+//		}
+//
+//		@Override
+//		public void onFailure(int reqId, JSONObject jsonobj) {
+//			// TODO Auto-generated method stub
+//			
+//		}
+//		
+//	};
+//		
+//	public void onclickfp(View view){
+//		
+//		Intent intent = new Intent(Login.this, forgotPaswrd.class);
+//		startActivity(intent);
+//	}
+//	
+//}

@@ -14,16 +14,38 @@
       <string name="forgot_password">fp</string>
     <string name="setphone1">setphone1</string>
     <string name="setphone2">setphone2</string>
-    <string name="setemail1">setemail1</string>
+    <string name="setphone3">setphone3</string>
+    <string name="setphone5">setphone5</string>
     
       <string name="update">update</string>
     <string name="phone">phone</string>
     <string name="email">email</string>
-    <string name="setemail2">setemail2</string>
+    <string name="setphone4">setphone4</string>
     
      <string name="passwords">password</string>
     <string name="cpasswords">confirm password</string>
     <string name="done">done</string>
      <string name="signin">signin</string>
      <string name="cancel">Cancel</string>
+   
+     <string name="use_both_providers">use_both_providers</string>
+    <string name="latlng">latlng</string>
+    <string name="address">address</string>
+     <string name="use_fine_provider">use_fine_provider</string>
+
+     <string name="app_name">Android Training: Location Update</string>
+    <string name="address">Address:</string>
+    <string name="enable_gps">Enable GPS</string>
+    <string name="enable_gps_dialog">GPS provider not enabled. Would you like to enable it?</string>
+    <string name="latlng">Lat/Long:</string>
+    <string name="unknown">--Unknown--</string>
+    <string name="not_support_gps">GPS provider not supported</string>
+    <string name="not_support_network">Network provider not supported</string>
+    <string name="use_fine_provider">Fine-grain provider</string>
+    <string name="use_both_providers">Both providers</string>
+     
+    <string name="not_support_gps">GPS provider not supported</string>
+    <string name="not_support_network">Network provider not supported</string>
+    <string name="use_fine_provider">Fine-grain provider</string>
+    <string name="use_both_providers">Both providers</string>
 </resources>

@@ -15,7 +15,9 @@
         android:layout_marginTop="40dp"
         android:ems="10"
         android:hint="@string/setphone1"
-        android:inputType="phone">
+        android:inputType="phone"
+        android:onClick="onPhoneSelection">
+        
     </EditText>
 
     <EditText
@@ -29,25 +31,34 @@
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/setemail1"
+        android:id="@+id/setphone3"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/setphone2"
         android:ems="10"
-        android:hint="@string/setemail1"
-        android:inputType="textEmailAddress" />
+        android:hint="@string/setphone3"
+        android:inputType="phone" />
 
     <EditText
-        android:id="@+id/setemail2"
+        android:id="@+id/setphone4"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/setemail1"
+        android:layout_below="@+id/setphone3"
         android:ems="10"
-        android:hint="@string/setemail2"
-        android:inputType="textEmailAddress" />
+        android:hint="@string/setphone4"
+        android:inputType="phone" />
 
+      <EditText
+        android:id="@+id/setphone5"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setphone4"
+        android:ems="10"
+        android:hint="@string/setphone5"
+        android:inputType="phone" />
     <Button
         android:id="@+id/update"
         android:layout_width="wrap_content"
@@ -55,7 +66,7 @@
         android:layout_centerVertical="true"
         android:layout_height="60dp"
         android:layout_alignParentLeft="false"
-        android:layout_below="@+id/setemail2"
+        android:layout_below="@+id/setphone5"
         android:ems="10"
         android:hint="@string/update"
          />

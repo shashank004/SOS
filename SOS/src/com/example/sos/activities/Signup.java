@@ -40,6 +40,19 @@ public class Signup extends Activity{
 		
 	}
 	
+	public void onStart() {
+		super.onStart();
+	HttpClient.getClientObject().register(1, arh); 
+	}
+	
+	public void onStop() {
+		
+		HttpClient.getClientObject().unRegister(1);
+		super.onStop();
+	}
+	
+	
+	
 
 public void onSignup(View view){
 	
@@ -70,21 +83,21 @@ public void onSignup(View view){
 		phne.setError(Errorss.Error_Phone);
 	}
 
-	if(Validation.fieldNotNull(A)==false){
-		password.setError(Errorss.Error_empty);
-	}
-	if(Validation.fieldNotNull(A)==false){
-		password.setError(Errorss.Error_empty);
-	}
-	if(Validation.fieldNotNull(A)==false){
-		password.setError(Errorss.Error_empty);
-	}
-	if(Validation.fieldNotNull(A)==false){
-		password.setError(Errorss.Error_empty);
-	}
-	if(Validation.fieldNotNull(A)==false){
-		password.setError(Errorss.Error_empty);
-	}
+//	if(Validation.fieldNotNull(A)==false){
+//		password.setError(Errorss.Error_empty);
+//	}
+//	if(Validation.fieldNotNull(A)==false){
+//		password.setError(Errorss.Error_empty);
+//	}
+//	if(Validation.fieldNotNull(A)==false){
+//		password.setError(Errorss.Error_empty);
+//	}
+//	if(Validation.fieldNotNull(A)==false){
+//		password.setError(Errorss.Error_empty);
+//	}
+//	if(Validation.fieldNotNull(A)==false){
+//		password.setError(Errorss.Error_empty);
+//	}
 	clientCall();
    
 	
@@ -97,9 +110,9 @@ private void  clientCall(){
 	param.put("parameters",jsonstrng );
 	int requestId =1;
 	
-	HttpClient.getClientObject().register(1, arh); 
+	HttpClient.getClientObject().register(1, arh);
 	
-	HttpClient.getClientObject().post(1,getApplicationContext(), HttpClient.header(), param, "http://10.0.0.51:8080/backend/signup",requestId);
+	HttpClient.getClientObject().post(2,getApplicationContext(), HttpClient.header(), param, "http://192.168.3.242:8080/backend/signup",requestId);
 	activitymap.put(requestId, "signup");
 	
 }
@@ -108,19 +121,12 @@ private void  clientCall(){
 
 
 	ApiResponseHandler arh = new ApiResponseHandler(){
-		
-		
- 
 		@Override
 		public void onSuccess(int reqId, JSONObject jsonobj) {
 		if(activitymap.get(reqId).equals("signup")){
 	    
 		}
 		
-		
-			
-		
-			
 		}
 
 		@Override

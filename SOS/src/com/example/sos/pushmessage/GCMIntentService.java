@@ -8,11 +8,6 @@ import com.google.android.gcm.GCMBaseIntentService;
 public class GCMIntentService extends GCMBaseIntentService{
 
 	
-	public GCMIntentService(){
-	
-	}
-	
-
 	
 	@Override
 	protected void onError(Context arg0, String arg1) {
@@ -28,13 +23,11 @@ public class GCMIntentService extends GCMBaseIntentService{
 
 	@Override
 	protected void onRegistered(Context arg0, String arg1) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	protected void onUnregistered(Context arg0, String arg1) {
-		// TODO Auto-generated method stub
-		
+	
 	}
 }

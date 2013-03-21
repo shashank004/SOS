@@ -42,6 +42,7 @@ public class HttpClientHandler extends AsyncHttpResponseHandler {
 	@Override
 	public void onFailure(Throwable e){
 		
+		Log.e("hsdjfhjkas", e.getMessage());
         	handler.onFailure(requestId, new JSONObject());
      
 }
